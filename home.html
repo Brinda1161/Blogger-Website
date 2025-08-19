@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Dashboard</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 50px;
+                color: #333;
+            }
+
+            h3 {
+                font-size: 25px;
+                margin-bottom: 50px;
+                color: #333;
+            }
+
+            #signup {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border: 1px solid black;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                /*background-color: red;*/
+                color: black;
+                /* Adding white text for better contrast */
+
+                /* Positioning */
+                position: fixed;
+                /* or 'absolute' depending on your needs */
+                top: 20px;
+                right: 20px;
+                z-index: 1000;
+                /* Ensures it stays above other elements */
+            }
+
+            /* Optional: Hover effect */
+            #signup:hover {
+                background-color: rgb(244, 178, 178);
+            }
+
+            #a {
+                padding: 10px 20px;
+                margin: 10px;
+                font-size: 16px;
+                cursor: pointer;
+                border: 1px solid black;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                background-color: beige;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Publish your passions, your way</h1>
+        <h3>Create a unique and beautiful blog easily.</h3>
+        <!-- <button id="login">Login</button> -->
+        <button id="a">Create your own blog</button>
+        <button id="signup">Sign Up</button>
+
+        <script>
+            const loginBtn = document.querySelector("#a");
+            const signupBtn = document.querySelector("#signup");
+
+            loginBtn.addEventListener("click", () => {
+                window.location.href = "/sign-up";
+            });
+
+            signupBtn.addEventListener("click", () => {
+                window.location.href = "/sign-up";
+            });
+
+        </script>
+    </body>
+
+</html>
