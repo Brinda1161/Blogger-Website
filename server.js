@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname))); // Serve static files
 
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/home.html"));
+    res.sendFile(path.join(__dirname, "/index.html"));
 });
 app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "/login.html"));
@@ -94,4 +94,5 @@ app.listen(3000, (err) => {
     } else {
         console.log("Server running on port 3000");
     }
+
 });
